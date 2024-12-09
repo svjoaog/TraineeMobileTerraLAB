@@ -1,8 +1,10 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Counter from './components/Counter';
-import Greetings from './components/Greetings';
+import Customer from './components/Customer';
+import { CustomerClass } from './components/CustomerClass';
+import Employee from './components/Employee';
+import { ExmployeeClass } from './components/EmployeeClass';
 
 function App() {
   return (
@@ -17,14 +19,25 @@ function App() {
                 <i className="fa fa-book"/>Read More</button>
             </div>
           </div>
-          <div className="row">
-            <div className="col">
-              <Counter/>
+          {/* <div className='row'>
+            <div className='col'>
+              <Customer name={'Joao'} age = {25} title = {'Software Engineer'}/>
             </div>
           </div>
+          <div className='=row'>
+            <div className='col'>
+              <CustomerClass name={'Joao'} age = {25} title = {'Software Engineer'}/>
+            </div>
+          </div> */}
           <div className="row">
             <div className="col">
-              <Greetings/>
+              <Employee/>
+            </div>
+          </div>
+
+          <div className="row">
+            <div className="col">
+              <ExmployeeClass/>
             </div>
           </div>
         </div>
